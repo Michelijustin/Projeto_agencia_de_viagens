@@ -253,7 +253,7 @@ form p{
 
 @media (max-width:768px){
     .frase{
-        max-width: 480px;
+        width: 400px;
     }
     
     .frase q{
