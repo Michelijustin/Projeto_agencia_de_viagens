@@ -266,10 +266,6 @@ form p{
         max-width: 400px;
         margin: auto;
     }
-
-    .frase q{
-        font-size: 20px;
-    }
 }
 
 @media (max-width:540px){
@@ -288,6 +284,14 @@ form p{
 
     .caixa{
         padding: 5px;
+    }
+
+    .frase{
+        width: 350px;
+    }
+    
+    .frase q{
+        font-size: 20px;
     }
     
 }
