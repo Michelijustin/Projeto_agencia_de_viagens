@@ -61,138 +61,8 @@ header nav span{
     transform: translateY(6px);
 }
 
-.fotos-container{
-    position: relative;
-    margin-top: 20px;
-    margin-bottom: 30px;
-}
 
-.frase{
-    background-color: rgba(0, 0, 0, 0.183);
-    padding: 20px;
-    border-radius: 5px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-}
-
-.frase q{
-    color: white;
-    font-size: 30px;
-    font-weight: bold;
-}
-
-.titulo_hospedagens{
-    margin-bottom: 10px;
-}
-
-.formulario{
-    background-color: var(--cor1);
-    border-radius: 5px;
-    height: 100px;
-}
-form{
-    gap: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-}
-
-form p{
-   background-color: white;
-}
-
-.caixa{
-    display: flex;
-    flex-direction: column;
-    padding: 8px;
-    border-radius: 5px;
-}
-
-.caixa input,select{
-    border: none;
-    color: rgba(0, 0, 0, 0.559);
-}
-
-.buscar{
-    background-color: orange;
-    padding: 10px 20px 10px 20px;
-    border-radius: 30px;
-}
-
-.buscar span{
-    padding-right: 5px;
-    color: white;
-    transform: translateY(3px);
-}
-
-.buscar input{
-    background-color: orange;
-    border: none;
-    font-size: 20px;
-    color: white;
-    font-weight: 700;
-}
-
-.mais_buscados{
-    margin: 40px 0px 10px 0px;
-}
-
-.card:hover{
-    cursor: pointer;
-    box-shadow: 3px 6px 10px rgba(0, 0, 0, 0.244);
-    transition: 0.5s;
-    transform: translate(-2px,-2px);
-}
-
-.estadia,.nota{
-    display: block;
-}
-
-.card-body h5{
-    font-weight: bold;
-    font-size: 23px;
-}
-
-.notas{
-    display: flex;
-}
-
-.card-body .estadia,p{
-    color: rgba(0, 0, 0, 0.578);
-}
-
-.card-body .estadia{
-    margin-bottom: 5px;
-}
-
-.nota{
-    background-color: rgb(3, 166, 145);
-    color: white;
-    width: 27px;
-    border-radius: 5px;
-    text-align: center;
-}
- 
-.pessoas{
-    border-top: 1px solid rgba(0, 0, 0, 0.178);
-    margin-top: 25px;
-    padding-top: 10px;
-    margin-bottom: 0px;
-}
-
-.real{
-    font-weight: 500;
-}
-
-.dinheiro{
-    font-size: 26px;
-    font-weight: 500;
-}
-
-/*   FOOTER   */
+/* FOOTER  */
 
 .redes{
     margin: 50px 0px 50px 0px;
@@ -254,6 +124,7 @@ form p{
 @media (max-width:768px){
     .frase{
         max-width: 400px;
+        top: 50%;
     }
     
     .frase q{
