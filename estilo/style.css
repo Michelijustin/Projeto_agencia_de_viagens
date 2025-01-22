@@ -1,9 +1,273 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root{
     --cor1: #0477BE;
     --cor2: #069BD7;
     --cor3: #02BEC0;
     --cor4: #E0E0D8;
     --cor5: #F1BD85;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Roboto", serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    background-image: linear-gradient(90deg,var(--cor1),var(--cor3));
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+header nav div{
+    padding: 10px;
+  
+}
+header nav div:hover{
+    background-color: rgba(255, 255, 255, 0.29);
+    border-radius: 5px;
+    transition: 0.5s;
+}
+header nav a {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.187);
+    color: white;
+    margin-right: 15px;
+    border-radius: 5px;
+    font-size: 23px;
+}
+
+header nav a:hover{
+    color: white;
+}
+
+header nav span{
+    color: white;
+    margin-right: 5px;
+    transform: translateY(6px);
+}
+
+.fotos-container{
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.frase{
+    background-color: rgba(0, 0, 0, 0.183);
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 5px;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.frase q{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.titulo_hospedagens{
+    margin-bottom: 10px;
+}
+
+.formulario{
+    background-color: var(--cor1);
+    border-radius: 5px;
+    height: 100px;
+}
+form{
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+form p{
+   background-color: white;
+}
+
+.caixa{
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.caixa input,select{
+    border: none;
+    color: rgba(0, 0, 0, 0.559);
+}
+
+.buscar{
+    background-color: orange;
+    padding: 10px 20px 10px 20px;
+    border-radius: 30px;
+}
+
+.buscar span{
+    padding-right: 5px;
+    color: white;
+    transform: translateY(3px);
+}
+
+.buscar input{
+    background-color: orange;
+    border: none;
+    font-size: 20px;
+    color: white;
+    font-weight: 700;
+}
+
+.mais_buscados{
+    margin: 40px 0px 10px 0px;
+}
+
+.card:hover{
+    cursor: pointer;
+    box-shadow: 3px 6px 10px rgba(0, 0, 0, 0.244);
+    transition: 0.5s;
+    transform: translate(-2px,-2px);
+}
+
+.estadia,.nota{
+    display: block;
+}
+
+.card-body h5{
+    font-weight: bold;
+    font-size: 23px;
+}
+
+.notas{
+    display: flex;
+}
+
+.card-body .estadia,p{
+    color: rgba(0, 0, 0, 0.578);
+}
+
+.card-body .estadia{
+    margin-bottom: 5px;
+}
+
+.nota{
+    background-color: rgb(3, 166, 145);
+    color: white;
+    width: 27px;
+    border-radius: 5px;
+    text-align: center;
+}
+ 
+.pessoas{
+    border-top: 1px solid rgba(0, 0, 0, 0.178);
+    margin-top: 25px;
+    padding-top: 10px;
+    margin-bottom: 0px;
+}
+
+.real{
+    font-weight: 500;
+}
+
+.dinheiro{
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.redes{
+    margin: 50px 0px 50px 0px;
+    padding: 30px 0px 30px 0px;
+    border-top: 1px solid rgba(0, 0, 0, 0.112);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.112);
+}
+
+.redes-sociais img{
+    width: 22px;
+    margin-left: 10px;
+}
+
+.vendas h3 ,a{
+    font-size: 16px;
+}
+
+.atendimento h3 ,a{
+    font-size: 15px;
+}
+
+.atendimento a,.vendas a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.548);
+    margin-left: 5px;
+}
+
+.informacao-final h3,a{
+    font-size: 15px;
+}
+
+.informacao-final li{
+    list-style: none;
+}
+
+.informacao-final a{
+    text-decoration: none;
+    color:  rgba(0, 0, 0, 0.548);
+}
+
+.informacao-final ul{
+    margin-bottom: 30px;
+}
+
+.direitos{
+    text-align: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.112);
+    
+    padding: 30px;
+}
+
+@media (max-width:995px){
+    .formulario{
+        height: 200px;
+    }
+
+}
+
+@media (max-width:768px){
+    .frase{
+        max-width: 400px;
+        top: 50%;
+    }
+    
+    .frase q{
+        font-size: 25px;
+    }
+}
+
+@media (max-width:600px){
+    .card{
+        max-width: 400px;
+        margin: auto;
+    }
+
+    .frase q{
+        font-size: 20px;
+    }
 }
