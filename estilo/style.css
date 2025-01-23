@@ -270,7 +270,8 @@ form p{
 
 @media (max-width:540px){
     .formulario{
-        height: 550px;
+        height: 410px;
+        border-radius: 0px;
     }
 
     form{
@@ -284,6 +285,7 @@ form p{
 
     .caixa{
         padding: 5px;
+        margin: 0px;
     }
 
     .frase{
@@ -294,4 +296,4 @@ form p{
         font-size: 20px;
     }
     
-}
+}     
