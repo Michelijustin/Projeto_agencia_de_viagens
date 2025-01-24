@@ -22,10 +22,11 @@ a{
 
 header{
     background-image: linear-gradient(90deg,var(--cor2),var(--cor3));
-    height: 100px;
+    height: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
+  
 }
 
 header nav{
@@ -48,7 +49,7 @@ header nav a {
     color: white;
     margin-right: 15px;
     border-radius: 5px;
-    font-size: 23px;
+    font-size: 20px;
 }
 
 header nav a:hover{
@@ -114,51 +115,9 @@ header nav span{
     padding: 30px;
 }
 
-@media (max-width:995px){
-    .formulario{
-        height: 200px;
-    }
-
-}
-
-@media (max-width:768px){
-    .frase{
-        max-width: 400px;
-        top: 50%;
-    }
-    
-    .frase q{
-        font-size: 25px;
-    }
-}
-
 @media (max-width:600px){
-    .card{
-        max-width: 400px;
-        margin: auto;
-    }
 
-    .frase q{
-        font-size: 20px;
+    header{
+        height: 80px;
     }
-}
-
-@media (max-width:540px){
-    .formulario{
-        height: 550px;
-    }
-
-    form{
-        gap: 10px;
-        flex-direction: column;
-    }
-
-    form .caixa{
-        width: 100%;
-    }
-
-    .caixa{
-        padding: 5px;
-    }
-    
 }
