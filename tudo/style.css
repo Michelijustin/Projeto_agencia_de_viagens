@@ -21,46 +21,190 @@ a{
 }
 
 header{
-    background-image: linear-gradient(90deg,var(--cor2),var(--cor3));
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  
+    margin: 10px 0px 10px 0px;
+    padding-bottom: 10px;
+    box-shadow: 3px 3px 4px #0000003a;
 }
 
-header nav{
+.comeco{
+    height: 60px;
+}
+
+nav{
+    display: flex;
+}
+
+nav div{
+    margin-right: 20px;
+}
+
+nav div span{
+    margin-right: 5px;
+}
+
+.imagem{
+    background-image: url('../img/po.jpg');
+    position: relative;
+    background-position: center,center;
+}
+
+.elementos-inicio{
+    height: 50px;
+    font-weight: 500;
+}
+
+.caixa-comeco a, span{
+    color: black;
+}
+
+.nome-pagina{
+    font-size: 20px;
+    margin: 10px 0px 10px 0px;
+}
+
+
+/* MAIN */
+
+.titulo{
+    margin: 60px 0px 10px 0px;
+}
+
+p{
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.747);
+}
+
+
+.titulo-oferta h3{
+    margin: 50px 0px 10px 0px;
+}
+
+.barra{
+    margin: auto;
+ }
+
+ 
+.c{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+   gap: 20px;
 }
 
-header nav div{
-    padding: 5px;
-  
+.bloco-hoteis{
+    max-width: 350px;
 }
-header nav div:hover{
-    background-color: rgba(255, 255, 255, 0.29);
-    border-radius: 5px;
+
+.card:hover{
+    cursor: pointer;
+    box-shadow: 3px 6px 10px rgba(0, 0, 0, 0.244);
     transition: 0.5s;
+    transform: translate(-2px,-2px);
 }
-header nav a {
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.187);
+
+.estadia,.nota{
+    display: block;
+}
+
+.card-body h5{
+    font-weight: bold;
+    font-size: 23px;
+}
+
+.notas{
+    display: flex;
+}
+
+.card-body .estadia,p{
+    color: rgba(0, 0, 0, 0.578);
+}
+
+.card-body .estadia{
+    margin-bottom: 5px;
+}
+
+.nota{
+    background-color: rgb(3, 166, 145);
     color: white;
-    margin-right: 15px;
+    width: 27px;
     border-radius: 5px;
+    text-align: center;
+}
+ 
+.pessoas{
+    border-top: 1px solid rgba(0, 0, 0, 0.178);
+    margin-top: 25px;
+    padding-top: 10px;
+    margin-bottom: 0px;
+}
+
+.real{
+    font-weight: 500;
+}
+
+.dinheiro{
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.formulario{
+    background-color: var(--cor1);
+    border-radius: 5px;
+    height: 100px;
+}
+form{
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+form p{
+   background-color: white;
+}
+
+.caixa{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.caixa input,select{
+    border: none;
+    color: rgba(0, 0, 0, 0.559);
+}
+
+.buscar{
+    background-color: orange;
+    padding: 10px 20px 10px 20px;
+    border-radius: 30px;
+}
+
+.buscar span{
+    padding-right: 5px;
+    color: white;
+    transform: translateY(3px);
+}
+
+.buscar input{
+    background-color: orange;
+    border: none;
     font-size: 20px;
+    color: white;
+    font-weight: 700;
 }
 
-header nav a:hover{
-    color: white;
+.mais_buscados{
+    margin: 40px 0px 10px 0px;
 }
 
-header nav span{
-    color: white;
-    margin-right: 5px;
-    transform: translateY(6px);
-}
+
+.barra{
+    max-width: 1100px;
+    margin: auto;
+ }
 
 
 /* FOOTER  */
@@ -115,9 +259,91 @@ header nav span{
     padding: 30px;
 }
 
+@media (max-width:1199px){
+    .formulario{
+        height: 180px;
+    }
+ }
+
+@media (max-width:1199px){
+
+    .c{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: start;
+        gap: 10px;
+    }
+
+    .barra{
+        padding: 10px;
+        overflow: auto;
+        max-width: 960px;
+    }
+    .card{
+        width: 300px;
+        margin: auto;
+    }
+}
+
+@media (max-width:995px){
+    .barra{
+        max-width: 700px;
+    }
+}
+
+@media (max-width:995px){
+    .formulario{
+        height: 150px;
+    } 
+    form{
+        gap: 10px;
+        height: 150px;
+    }
+    .caixa{
+        font-size: 16px;
+        margin: 0px;
+    }
+
+}
+
+@media (max-width:771px){
+
+    .barra{
+        max-width: 530px;
+    }
+    .card{
+        width: 200px;
+    }
+
+}
+
 @media (max-width:600px){
 
     header{
         height: 80px;
     }
+}
+
+@media (max-width:540px){
+    .formulario{
+        height: 410px;
+        border-radius: 0px;
+    }
+
+    form{
+        height: 410px;
+        gap: 10px;
+        flex-direction: column;
+    }
+
+    form .caixa{
+        width: 100%;
+    }
+
+    .caixa{
+        width: 200px;
+        padding: 5px;
+        margin: 0px;
+    }
+
 }

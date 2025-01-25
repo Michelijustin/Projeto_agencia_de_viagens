@@ -2,88 +2,106 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-.fotos-container{
-    position: relative;
-    margin-top: 20px;
-    margin-bottom: 30px;
+:root{
+    --cor1: #0477BE;
+    --cor2: #069BD7;
+    --cor3: #02BEC0;
+    --cor4: #E0E0D8;
+    --cor5: #F1BD85;
 }
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Roboto", serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    margin: 10px 0px 0px 0px;
+    padding-bottom: 10px;
+    box-shadow: 3px 3px 4px #0000003a;
+}
+
+.comeco{
+    height: 60px;
+}
+
+nav{
+    display: flex;
+}
+
+nav div{
+    margin-right: 20px;
+}
+
+nav div span{
+    margin-right: 5px;
+}
+
+.imagem{
+    background-image: url('../img/po.jpg');
+    position: relative;
+    background-position: center,center;
+}
+
+.elementos-inicio{
+    height: 50px;
+    font-weight: 500;
+}
+
+.caixa-comeco a, span{
+    color: black;
+}
+
+.nome-pagina{
+    font-size: 20px;
+    margin: 10px 0px 10px 0px;
+   
+}
+
+.imagem-fundo{
+    height: 450px;
+    background-color: rgba(0, 0, 0, 0.452);
+}
+
 
 .frase{
-    background-color: rgba(0, 0, 0, 0.183);
-    padding: 20px;
-    border-radius: 5px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+    align-self: center;
 }
 
-.frase q{
+.frase-fundo{
     color: white;
     font-size: 30px;
-    font-weight: bold;
+    text-align: center;
+    position: absolute;
+    transform: translatey(-280px);
 }
 
-.titulo_hospedagens{
-    margin-bottom: 10px;
+main{
+    margin-top: 100px;
 }
 
-.formulario{
-    background-color: var(--cor1);
-    border-radius: 5px;
-    height: 100px;
-}
-form{
-    gap: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+/**/
+
+.titulo{
+    margin: 60px 0px 10px 0px;
 }
 
-form p{
-   background-color: white;
-}
-
-.caixa{
-    display: flex;
-    flex-direction: column;
-    padding: 8px;
-    border-radius: 5px;
-}
-
-.caixa input,select{
-    border: none;
-    color: rgba(0, 0, 0, 0.559);
-}
-
-.buscar{
-    background-color: orange;
-    padding: 10px 20px 10px 20px;
-    border-radius: 30px;
-}
-
-.buscar span{
-    padding-right: 5px;
-    color: white;
-    transform: translateY(3px);
-}
-
-.buscar input{
-    background-color: orange;
-    border: none;
+p{
     font-size: 20px;
-    color: white;
-    font-weight: 700;
+    color: rgba(0, 0, 0, 0.747);
 }
 
-.mais_buscados{
-    margin: 40px 0px 10px 0px;
-}
 
+.titulo-oferta h3{
+    margin: 50px 0px 10px 0px;
+}
 
 .barra{
-    max-width: 1100px;
     margin: auto;
  }
 
@@ -151,7 +169,79 @@ form p{
     font-weight: 500;
 }
 
-/*   FOOTER   */
+.form-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+     position: absolute;
+     transform: translateY(-30px);
+ 
+ }
+
+.formulario{
+    max-width: 900px;
+    background-color: var(--cor1);
+    border-radius: 5px;
+    height: 90px;
+}
+form{
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 80px;
+    justify-content: center;
+}
+
+form p{
+   background-color: white;
+}
+
+.caixa{
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.caixa input,select{
+    border: none;
+    color: rgba(0, 0, 0, 0.559);
+}
+
+.buscar{
+    background-color: orange;
+    padding: 10px 20px 10px 20px;
+    border-radius: 30px;
+}
+
+.buscar span{
+    padding-right: 5px;
+    color: white;
+    transform: translateY(3px);
+}
+
+.buscar input{
+    background-color: orange;
+    border: none;
+    font-size: 18px;
+    color: white;
+    font-weight: 700;
+}
+
+.mais_buscados{
+    margin: 40px 0px 10px 0px;
+}
+
+
+.barra{
+    max-width: 1100px;
+    margin: auto;
+ }
+
+
+/* FOOTER  */
 
 .redes{
     margin: 50px 0px 50px 0px;
@@ -179,33 +269,39 @@ form p{
     margin-left: 5px;
 }
 
+.informacao-final h3,a{
+    font-size: 15px;
+}
+
+.informacao-final li{
+    list-style: none;
+}
+
+.informacao-final a{
+    text-decoration: none;
+    color:  rgba(0, 0, 0, 0.548);
+}
+
+.informacao-final ul{
+    margin-bottom: 30px;
+}
+
+.direitos{
+    text-align: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.112);
+    
+    padding: 30px;
+}
 
 
-@media (max-width:995px){
+@media (max-width:1198px){
     .formulario{
-        height: 200px;
+        height: 90px;
     }
+ }
 
-}
+@media (max-width:1199px){
 
-@media (max-width:770px){
-    
-}
-
-@media (max-width:768px){
-    .frase{
-        width: 400px;
-    }
-    
-    .frase q{
-        font-size: 22px;
-    }
-
-
-}
-
-
-@media (max-width:770px){
     .c{
         display: flex;
         flex-wrap: nowrap;
@@ -216,11 +312,58 @@ form p{
     .barra{
         padding: 10px;
         overflow: auto;
+        max-width: 960px;
+    }
+    .card{
+        width: 300px;
+        margin: auto;
+    }
+}
+
+@media (max-width:995px){
+    .barra{
+        max-width: 700px;
+    }
+}
+
+@media (max-width:991px){
+    .formulario{
+        height: 150px;
+    }
+
+    form{
+        gap: 10px;
+        height: 140px;
+    }
+
+    main{
+        margin-top: 150px;
+    }
+}
+
+
+@media (max-width:770px){
+
+    .barra{
         max-width: 530px;
     }
     .card{
         width: 200px;
-        margin: auto;
+    }
+    
+
+}
+
+@media(max-width:767px){
+    .formulario{
+        height: 160px;
+    }
+}
+
+@media (max-width:600px){
+
+    header{
+        height: 80px;
     }
 }
 
@@ -233,6 +376,7 @@ form p{
     form{
         gap: 10px;
         flex-direction: column;
+        height: 410px;
     }
 
     form .caixa{
@@ -240,16 +384,16 @@ form p{
     }
 
     .caixa{
+        width: 200px;
         padding: 5px;
         margin: 0px;
     }
 
-    .frase{
-        width: 350px;
-    }
-    
-    .frase q{
-        font-size: 20px;
+    main{
+        margin-top: 430px;
     }
 
-}     
+}
+
+
+
