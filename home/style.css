@@ -24,10 +24,7 @@ header{
     margin: 10px 0px 0px 0px;
     padding-bottom: 10px;
     box-shadow: 3px 3px 4px #0000003a;
-}
-
-.comeco{
-    height: 60px;
+    height: 80px;
 }
 
 nav{
@@ -368,6 +365,10 @@ form p{
 }
 
 @media (max-width:540px){
+    header{
+        height: 90px;
+    }
+    
     .formulario{
         height: 410px;
         border-radius: 0px;
